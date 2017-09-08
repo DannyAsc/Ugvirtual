@@ -1,0 +1,17 @@
+	<br>
+
+	
+<!--<p><b>Inicia Sesion Como Admin o Alumno</b></p>-->
+<br><br><br><br>
+
+
+
+
+
+
+<div class="centrologin">
+
+<form  name="Inicio" action=""  method="post"> 
+<input type="submit" name="butSubmit1" value="Sesion Administrador" class="input2">&nbsp;&nbsp;&nbsp;
+<input type="submit" name="butSubmit2" value="Sesion Alumno" class="input2">
+</form>
