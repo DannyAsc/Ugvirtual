@@ -414,6 +414,7 @@ header{
     background-image: url(Banner.png);
     height: 204px;
     align-content: center;
+    background-size: cover;
 }
 
 /*----------------------------Navegador---------------------------*/

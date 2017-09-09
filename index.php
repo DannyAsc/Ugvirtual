@@ -1,3 +1,6 @@
+<?php
+    session_start();
+?>
 <!DOCTYPE html>
 <html>
 <head>        
@@ -18,7 +21,17 @@
    
           <label class="header" style="color: blue; font-size: 25px;">  </label>
 		<ul class="regi" >
-       <span>   <li ><a href="inicio.php" >LOGEARSE / REGISTRARSE</a> </li> </span>
+       <span>   <li >
+       <?php 
+           
+    if (isset($_SESSION['usuario'])) {
+        echo "$_SESSION[usuario]";
+    echo '<a href="cerrar_sesion.php"> Cerrar Sesion</a>';
+    }else{
+    echo '<a href="inicio.php">LOGEARSE / REGISTRARSE</a>';
+  }
+?>
+     <!-- <a href="inicio.php" >LOGEARSE / REGISTRARSE</a> --> </li> </span>
 
 	 
       </ul>
