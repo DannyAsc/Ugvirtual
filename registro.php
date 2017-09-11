@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximun-scale=1, minimun-scale=1">
 <title>MI LOGIN</title>
 <style>
-input[type=text], input[type=password] input[type=email]{
+input[type=text], input[type=password], input[type=email]{
     width: 10%;
     padding: 10px 12px;
     margin: 4px 0;
