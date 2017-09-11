@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximun-scale=1, minimun-scale=1">
 <title>MI LOGIN</title>
 <style>
-input[type=text], input[type=password] {
+input[type=text], input[type=password] input[type=email]{
     width: 10%;
     padding: 10px 12px;
     margin: 4px 0;
@@ -48,12 +48,15 @@ img.avatar {
     <img src="user3.png" alt="" class="">
   </div>
   <div class="container" align="center">
+    <label><b>NOMBRES:</b></label>
+    <input type="text" name="Nombres" id="nom_usu"><br>
     <label><b>USUARIO:</b></label>
     <input type="text" placeholder=&#128100; name="usuarios" id="nombre"></br>
     <label><b>CLAVE:</b></label>
     <input type="password" placeholder=&#128273; name="clave" id="clave"></br>
-    <button  type="submit">INGRESAR</button>
-    <button type="button" onclick="location = 'registro.php'">REGISTRARSE</button>
+    <label for=""><b>Email:</b></label>
+    <input type="email" name="email" id="email"><br>
+    <button  type="submit">REGISTRARSE</button>
 		<p><a align="center" class ="links" href="index.php">Regresar</a></p>
   </div>
 </form>

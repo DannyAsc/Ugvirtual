@@ -10,15 +10,14 @@
 		
 </head>    
 <body class="librotablet">
- <span style="color: white; font-size: 25px;" class="header">UG Store</span>
-  <span class="header"><a href="">Tienda</a></span>
-   <form name="buscador" action="libro.php" method="POST" ALIGN="center">
-		
-			<input style="color: blue; font-size: 25px; "  type="submit" name="butSubmit" value="Buscar Libro" >
-			<input style="color: blue; font-size: 25px; "  type="text" name="buscar" size="24">
-			</form>
+ 
   <header>
-   
+     <span style="color: white; font-size: 25px;" class="header">UG Store</span>
+     <span class="header"><a href="">Tienda</a></span>
+     <form name="buscador" action="libro.php" method="POST" ALIGN="center" id="buscador">
+		<input style="color: blue; font-size: 25px; "  type="submit" name="butSubmit" value="Buscar Libro" >
+		<input style="color: blue; font-size: 25px; "  type="text" name="buscar" size="24" id="text_busc">
+	 </form>
           <label class="header" style="color: blue; font-size: 25px;">  </label>
 		<ul class="regi" >
        <span>   <li >

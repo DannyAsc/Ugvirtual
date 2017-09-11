@@ -15,7 +15,7 @@ if ($conexion->connect_error) {
 $nombre = $_POST['usuarios'];
 $clave = $_POST['clave'];
 
-$sql = "SELECT * FROM usuarios WHERE nombre = '$nombre' and clave = '$clave' and estado = 'a'";
+$sql = "SELECT * FROM usuarios WHERE user = '$nombre' and clave = '$clave' and estado = 'a'";
 $result = $conexion->query($sql);
 $row = $result->fetch_array(MYSQLI_ASSOC);
 if ($row['estado']=='a') { 
