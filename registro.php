@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <link rel="stylesheet" type="text/css" href="estilo.css">
 <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximun-scale=1, minimun-scale=1">
-<title>MI LOGIN</title>
+<title>REGISTRO</title>
 <style>
 input[type=text], input[type=password], input[type=email]{
     width: 10%;
@@ -43,7 +43,7 @@ img.avatar {
 <body style="background-color:#f5eb46;">
 	
 <h1 align="center">INICIAR SESION</h1>
-<form action="milogin.php" method="post">
+<form action="miregistro.php" method="post">
  <div class="imgcontainer">
     <img src="user3.png" alt="" class="">
   </div>

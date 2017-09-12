@@ -44,7 +44,7 @@
   
   </div>
 	
-		<div id="header">
+		<div id="header" hidden="hidden">
 			<nav> <!-- Aqui estamos iniciando la nueva etiqueta nav -->
 				<ul class="nav">
 					<li><a href="">Ver</a></li>
