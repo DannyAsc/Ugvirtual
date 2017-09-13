@@ -18,10 +18,22 @@ $clave = $_POST['clave'];
 $sql = "SELECT * FROM usuarios WHERE user = '$nombre' and clave = '$clave' and estado = 'a'";
 $result = $conexion->query($sql);
 $row = $result->fetch_array(MYSQLI_ASSOC);
-if ($row['estado']=='a') { 
+if ($row['estado']=='a' && $row['privilegio'] == '1') { 
     echo '<script language="javascript">alert("BIENVENIDO SU USUARIO ESTA ACTIVO!!");location.href ="principal.php";</script>';
+    $_SESSION['loggedin'] = true;
+    $_SESSION['usuario'] = $nombre;
+    $_SESSION['start'] = time();
+    $_SESSION['expire'] = $_SESSION['start'] + (5 * 60);
+}elseif($row['estado']=='a' && $row['privilegio'] == '2'){
+    echo '<script language="javascript">alert("BIENVENIDO SU USUARIO ESTA ACTIVO!!");location.href ="principal2.php";</script>';
+    $_SESSION['loggedin'] = true;
+    $_SESSION['usuario'] = $nombre;
+    $_SESSION['start'] = time();
+    $_SESSION['expire'] = $_SESSION['start'] + (5 * 60);
+}else{
+    echo '<script language="javascript">alert("USUARIO O PASSWORD INCORRECTA!!");location.href ="inicio.php";</script>';
 }
-if ($result->num_rows > 0) {     
+/*if ($result->num_rows > 0) {     
   
     $_SESSION['loggedin'] = true;
     $_SESSION['usuario'] = $nombre;
@@ -29,7 +41,7 @@ if ($result->num_rows > 0) {
     $_SESSION['expire'] = $_SESSION['start'] + (5 * 60);
     echo '<script language="javascript">alert("Bienvenido!!");location.href ="principal.php";</script>';
  } else { 
-   echo '<script language="javascript">alert("USUARIO y PASSWORD INCORRECTA!!");location.href ="inicio.php";</script>';
- }
+   echo '<script language="javascript">alert("USUARIO O PASSWORD INCORRECTA!!");location.href ="inicio.php";</script>';
+ }*/
  mysqli_close($conexion); 
  ?>

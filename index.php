@@ -12,8 +12,8 @@
 <body class="librotablet">
  
   <header>
-     <span style="color: white; font-size: 25px;" class="header">UG Store</span>
-     <span class="header"><a href="">Tienda</a></span>
+     <span style="color: white; font-size: 25px;" class="header"><a href="index.php">UG Store</a></span>
+     <span class="header"><a href="Principal2.php">Tienda</a></span>
      <form name="buscador" action="libro.php" method="POST" ALIGN="center" id="buscador">
 		<input style="color: blue; font-size: 25px; "  type="submit" name="butSubmit" value="Buscar Libro" >
 		<input style="color: blue; font-size: 25px; "  type="text" name="buscar" size="24" id="text_busc">
